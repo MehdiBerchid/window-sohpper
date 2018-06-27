@@ -35,7 +35,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVi-S7-79j" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="57" y="287" width="260.5" height="41"/>
+                                <rect key="frame" x="57" y="287" width="261" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="JPR-aY-XMm"/>
                                 </constraints>
@@ -43,19 +43,52 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfH-OL-GrR">
+                                <rect key="frame" x="56.5" y="358" width="261" height="63"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtR-tn-tua">
+                                <rect key="frame" x="154" y="428" width="67" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3ys-zg-pBH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j04-vg-1ky">
+                                <rect key="frame" x="57" y="599" width="261" height="31"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClearCalculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jiy-Cg-mN8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xoq-h7-V7b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1g1-8F-er3"/>
+                            <constraint firstItem="VfH-OL-GrR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8yX-AD-Y81"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xoq-h7-V7b" secondAttribute="bottom" constant="420" id="GTW-pL-PJS"/>
+                            <constraint firstItem="j04-vg-1ky" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="U0O-hw-GeG"/>
                             <constraint firstItem="xoq-h7-V7b" firstAttribute="top" secondItem="ICD-YX-0Fq" secondAttribute="bottom" constant="44" id="VVi-yN-TCx"/>
                             <constraint firstItem="KVi-S7-79j" firstAttribute="top" secondItem="xoq-h7-V7b" secondAttribute="bottom" constant="40" id="W3c-5E-9sR"/>
+                            <constraint firstItem="VfH-OL-GrR" firstAttribute="top" secondItem="KVi-S7-79j" secondAttribute="bottom" constant="30" id="WDT-Y5-h3S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j04-vg-1ky" secondAttribute="bottom" constant="37" id="X9F-qr-0lm"/>
                             <constraint firstItem="ZEO-B7-oj9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ady-bs-Bk2"/>
                             <constraint firstItem="ZEO-B7-oj9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b2s-Uq-llT"/>
+                            <constraint firstItem="RtR-tn-tua" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ccc-80-pM4"/>
                             <constraint firstItem="KVi-S7-79j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="cjP-kK-GGl"/>
                             <constraint firstItem="xoq-h7-V7b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="crE-ms-iPs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j04-vg-1ky" secondAttribute="trailing" constant="57" id="d8z-3y-QaY"/>
                             <constraint firstItem="ZEO-B7-oj9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fwe-ds-Coj"/>
                             <constraint firstItem="KVi-S7-79j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l8M-K6-BTB"/>
+                            <constraint firstItem="VfH-OL-GrR" firstAttribute="width" secondItem="KVi-S7-79j" secondAttribute="width" id="lN3-kz-fQg"/>
+                            <constraint firstItem="RtR-tn-tua" firstAttribute="top" secondItem="VfH-OL-GrR" secondAttribute="bottom" constant="7" id="mUa-Db-MfN"/>
                             <constraint firstItem="ICD-YX-0Fq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nKw-Gt-b7a"/>
                             <constraint firstItem="ICD-YX-0Fq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="r5C-5D-5sO"/>
                             <constraint firstItem="ZEO-B7-oj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vP0-UV-mS9"/>
@@ -65,6 +98,8 @@
                     <connections>
                         <outlet property="Hourlywage" destination="xoq-h7-V7b" id="AT3-Dw-q8k"/>
                         <outlet property="Itemprice" destination="KVi-S7-79j" id="Uw4-f9-Wsl"/>
+                        <outlet property="hourslbl" destination="RtR-tn-tua" id="Nfr-rX-MP7"/>
+                        <outlet property="resulatlbl" destination="VfH-OL-GrR" id="tFQ-z0-keO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
