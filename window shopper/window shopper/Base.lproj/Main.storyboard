@@ -29,27 +29,43 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xoq-h7-V7b" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="72" y="206" width="230" height="30"/>
+                                <rect key="frame" x="57" y="206" width="260" height="41"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVi-S7-79j" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="57" y="287" width="260.5" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="JPR-aY-XMm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xoq-h7-V7b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1g1-8F-er3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xoq-h7-V7b" secondAttribute="bottom" constant="431" id="GTW-pL-PJS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xoq-h7-V7b" secondAttribute="bottom" constant="420" id="GTW-pL-PJS"/>
                             <constraint firstItem="xoq-h7-V7b" firstAttribute="top" secondItem="ICD-YX-0Fq" secondAttribute="bottom" constant="44" id="VVi-yN-TCx"/>
+                            <constraint firstItem="KVi-S7-79j" firstAttribute="top" secondItem="xoq-h7-V7b" secondAttribute="bottom" constant="40" id="W3c-5E-9sR"/>
                             <constraint firstItem="ZEO-B7-oj9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ady-bs-Bk2"/>
                             <constraint firstItem="ZEO-B7-oj9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b2s-Uq-llT"/>
-                            <constraint firstItem="xoq-h7-V7b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="crE-ms-iPs"/>
+                            <constraint firstItem="KVi-S7-79j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="cjP-kK-GGl"/>
+                            <constraint firstItem="xoq-h7-V7b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="crE-ms-iPs"/>
                             <constraint firstItem="ZEO-B7-oj9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fwe-ds-Coj"/>
+                            <constraint firstItem="KVi-S7-79j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l8M-K6-BTB"/>
                             <constraint firstItem="ICD-YX-0Fq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nKw-Gt-b7a"/>
                             <constraint firstItem="ICD-YX-0Fq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="r5C-5D-5sO"/>
                             <constraint firstItem="ZEO-B7-oj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vP0-UV-mS9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Hourlywage" destination="xoq-h7-V7b" id="AT3-Dw-q8k"/>
+                        <outlet property="Itemprice" destination="KVi-S7-79j" id="Uw4-f9-Wsl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
